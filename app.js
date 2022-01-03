@@ -1,13 +1,13 @@
 // Author: Shri Suneel Kumar Reddy 
 
 function hf() {
-if(document.getElementById("height").value != "") {
+if(document.getElementById("height").value == "") {
 window.speechSynthesis.speak(new SpeechSynthesisUtterance('Enter your height'));
 }
 }
 
 function hw() {
-if(document.getElementById("weight").value != "") {
+if(document.getElementById("weight").value == "") {
 window.speechSynthesis.speak(new SpeechSynthesisUtterance('Enter your weight'));
 }
 }
