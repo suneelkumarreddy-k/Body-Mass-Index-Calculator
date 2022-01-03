@@ -1,5 +1,12 @@
 // Author: Shri Suneel Kumar Reddy 
 
+function hf() {
+window.speechSynthesis.speak(new SpeechSynthesisUtterance('Enter your height'));
+}
+function hw() {
+window.speechSynthesis.speak(new SpeechSynthesisUtterance('Enter your weight'));
+}
+
 function bmi() {
 
 var start = performance.now();
@@ -27,4 +34,5 @@ else {
 var end = performance.now();
 var wpn = end-start;
 alert("Calculated in "+wpn.toFixed(2)+" ms 😎");
+//window.speechSynthesis.speak(new SpeechSynthesisUtterance('Calculated'));
 }
