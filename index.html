@@ -15,9 +15,9 @@ height(H). BMI = W / (H x H), where W = body weight in kilograms and H = height 
 The higher the score usually indicates higher levels of body fat.</p>
 <form onsubmit="bmi();return false">
 <label for="Height"><b>Height (Meters: 0.0m (or) Feet & Inches: 0.0f) :</b></label>
-<input id="height" type="text" placeholder="Ex: 1.76m (or) 5.8f" oninvalid="this.setCustomValidity('Ex: 1.76m (or) 5.8f')" oninput="this.setCustomValidity('')"  required pattern="[0-9mMFf. ]+">
+<input id="height" type="text" placeholder="Ex: 1.76m (or) 5.8f" onfocus="hf()" oninvalid="this.setCustomValidity('Ex: 1.76m (or) 5.8f')" oninput="this.setCustomValidity('')"  required pattern="[0-9mMFf. ]+">
 <label for="weight"><b>Weight (Kilograms) :</b></label>
-<input id="weight" type="number" placeholder="kilograms" required  step=".01" >
+<input id="weight" type="number" placeholder="kilograms" onfocus="hw()" required  step=".01" >
 <input type="submit" value="Calculate" >
 </form>
 <h2>Body Composition</h2>
