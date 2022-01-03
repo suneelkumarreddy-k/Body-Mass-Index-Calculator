@@ -3,7 +3,7 @@
 function bmi() {
 var start = performance.now();
 let score = document.getElementById("weight").value / (document.getElementById("height").value * 2);
-document.getElementById("score").innerHTML = score;
+document.getElementById("score").innerHTML = score.toFixed(2);
 
 if(score >30) {
     document.getElementById("result").innerHTML = "Obese";
