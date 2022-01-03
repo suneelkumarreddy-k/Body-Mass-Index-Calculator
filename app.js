@@ -1,8 +1,10 @@
 // Author: Shri Suneel Kumar Reddy 
 
 function bmi() {
+
 var start = performance.now();
 let ht = document.getElementById("height").value;
+alert(ht);
 let h = parseFloat(ht);
 let u = ht.replace(/[^a-zA-Z]/g, '');
 alert(h + " "+u); 
