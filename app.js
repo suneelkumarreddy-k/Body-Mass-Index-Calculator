@@ -8,7 +8,7 @@ document.getElementById("score").innerHTML = score.toFixed(2);
 if(score >30) {
     document.getElementById("result").innerHTML = "Obese";
 }
-else if(score >= 25 && score <= 30) {
+else if(score > 25 && score <= 30) {
      document.getElementById("result").innerHTML = "Overweight";
     }
 else if(score >= 18.5 && score <= 25) {
