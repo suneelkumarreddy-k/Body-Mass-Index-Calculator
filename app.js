@@ -4,7 +4,7 @@ function bmi() {
 var start = performance.now();
 let ht = document.getElementById("height").value;
 let h = parseFloat(h);
-let u = h.replace(/[^a-zA-Z]/g, '');
+let u = ht.replace(/[^a-zA-Z]/g, '');
 alert(h + " "+u); 
 let score = document.getElementById("weight").value / (document.getElementById("height").value * 2);
 document.getElementById("score").innerHTML = score.toFixed(2);
