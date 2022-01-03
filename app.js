@@ -5,7 +5,7 @@ var start = performance.now();
 let score = document.getElementById("weight").value / (document.getElementById("height").value * 2);
 document.getElementById("score").innerHTML = score;
 
-If(score >30) {
+if(score >30) {
     document.getElementById("result").innerHTML = "Obese";
 }
 else if(score >= 25 && score <= 30) {
