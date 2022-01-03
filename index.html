@@ -10,15 +10,61 @@
 </head>
 <body>
 <h1>Body Mass Index (BMI) Calculator</h1>
+<p>The test performed is Body Mass Index (BMI), which is calculated from body Weight (W) and 
+height(H). BMI = W / (H x H), where W = body weight in kilograms and H = height in meters. 
+The higher the score usually indicates higher levels of body fat.</p>
 <form onsubmit="bmi();return false">
-<label for="Height">Height :</label>
+<label for="Height">Height (Meters) :</label>
 <input id="height" type="number" placeholder="meters" required  step=".01" >
-<label for="weight">Weight :</label>
+<label for="weight">Weight (Kilograms) :</label>
 <input id="weight" type="number" placeholder="kilograms" required  >
 <input type="submit" value="Calculate" >
 </form>
 <p>Body Composition</p>
 <p><b>Score</b> = <span id="score">0</span></p>
+<h2>BMI Level</h2>
+<table>
+<tr>
+<th>
+BMI Categories
+</th>
+<th>
+BMI range – kg/m2
+</th>
+</tr>
+<tr>
+<td>
+Underweight
+</td>
+<td>
+< 18.5
+</td>
+</tr>
+<tr>
+<td>
+Normal (healthy weight)
+</td>
+<td>
+from 18.5 to 25
+</td>
+</tr>
+<tr>
+<td>
+Overweight
+</td>
+<td>
+from 25 to 30
+</td>
+</tr>
+<tr>
+<td>
+Obese
+</td>
+<td>
+> 30
+</td>
+</tr>
+</table>
 <footer>
 <p>© Shri Suneel Kumar Reddy </p>
 </footer>
