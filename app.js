@@ -1,3 +1,5 @@
+// Author: Shri Suneel Kumar Reddy 
+
 function bmi() {
 var start = performance.now();
 let score = document.getElementById("weight").value / (document.getElementById("height").value * 2);
