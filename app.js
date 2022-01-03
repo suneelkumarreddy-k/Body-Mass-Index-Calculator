@@ -21,5 +21,5 @@ else {
 */
 var end = performance.now();
 var wpn = end-start;
-alert("Calculated in "+wpn+" ms 😎");
+alert("Calculated in "+wpn.toFixed(2)+" ms 😎");
 }
