@@ -14,7 +14,7 @@
 height(H). BMI = W / (H x H), where W = body weight in kilograms and H = height in meters. 
 The higher the score usually indicates higher levels of body fat.</p>
 <form onsubmit="bmi();return false">
-<label for="Height"><b>Height</b> ( Meters = 0.0 - 3.35 (raw) || 0.00m (stamp) (or) Feet & Inches = 3.35 - 11 (raw) || 0.00f (stamp) ) : </label>
+<label for="Height"><b>Height</b> ( Meters: < 3.35 (raw) || 0.00m (stamp) (or) Feet & Inches: > 3.35 (raw) || 0.00f (stamp) ) : </label>
 <input id="height" type="text" placeholder="Enter Height" oninput="hf()" onfocus="hf()" oninvalid="this.setCustomValidity('Ex: 1.76m (or) 5.8f')" oninput="this.setCustomValidity('')"  required pattern="[0-9mMFf. ]+">
 <label for="weight"><b>Weight</b> (Kilograms) :</b></label>
 <input id="weight" type="number" placeholder="Enter Weight" oninput="hw()" onfocus="hw()" required  step=".01" >
