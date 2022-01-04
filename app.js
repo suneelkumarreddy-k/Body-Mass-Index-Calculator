@@ -18,6 +18,7 @@ var start = performance.now();
 let ht = document.getElementById("height").value;
 let h = parseFloat(ht);
 let u = ht.replace(/[^a-zA-Z]/g, '');
+u = u.trim();
 let height = (u == "f" || u == "F") ? (0.3048*h) : (u == "m" || u == "M") ? h : (h > 3.35) ? (0.3048*h) : h; 
 let score = document.getElementById("weight").value / (height* 2);
 document.getElementById("score").innerHTML = score.toFixed(2);
