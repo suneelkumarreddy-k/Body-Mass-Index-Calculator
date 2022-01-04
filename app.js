@@ -2,13 +2,13 @@
 
 function hf() {
 if(document.getElementById("height").value == "") {
-window.speechSynthesis.speak(new SpeechSynthesisUtterance('Enter your height'));
+window.speechSynthesis.speak(new SpeechSynthesisUtterance('Enter height'));
 }
 }
 
 function hw() {
 if(document.getElementById("weight").value == "") {
-window.speechSynthesis.speak(new SpeechSynthesisUtterance('Enter your weight'));
+window.speechSynthesis.speak(new SpeechSynthesisUtterance('Enter weight'));
 }
 }
 
@@ -40,5 +40,5 @@ else {
 var end = performance.now();
 var wpn = end-start;
 alert("Calculated in "+wpn.toFixed(2)+" ms 😎");
-window.speechSynthesis.speak(new SpeechSynthesisUtterance('You are ' + document.getElementById("result").innerHTML));
+window.speechSynthesis.speak(new SpeechSynthesisUtterance(document.getElementById("result").innerHTML));
 }
