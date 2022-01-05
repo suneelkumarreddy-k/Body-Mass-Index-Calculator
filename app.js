@@ -1,9 +1,13 @@
 // Author: Shri Suneel Kumar Reddy 
 function te(this) {
-if(this.id == "score") {
+if(this.id == "sre") {
   const cb = navigator.clipboard;
-  const paragraph = document.getElementById("score").innerHTML;
-  cb.writeText(paragraph).then(() => alert('Text copied'));
+  const p = document.getElementById("score").innerHTML;
+  cb.writeText(p).then(() => alert('Text copied'));
+} else {
+const cb = navigator.clipboard;
+  const p = document.getElementById("result").innerHTML;
+  cb.writeText(p).then(() => alert('Text copied'));
 }
 }
 
