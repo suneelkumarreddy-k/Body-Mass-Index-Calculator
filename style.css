@@ -9,3 +9,5 @@ table, th, td {
 #sre, #rlt {
 float: right; 
 }
+
+th { background-color: #bde9ba; }
