@@ -2,11 +2,11 @@
 function te(ob) {
 if(ob.id == "sre") {
     var p = document.getElementById("score").innerHTML;  
-navigator.clipboard.writeText(p);
+navigator.clipboard.writeText(p.toString());
 alert('Text copied');
 } else {
   var p = document.getElementById("result").innerHTML;
-  navigator.clipboard.writeText(p);
+  navigator.clipboard.writeText(p.toString());
 alert('Text copied');
 }
 }
