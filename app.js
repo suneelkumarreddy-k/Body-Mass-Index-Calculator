@@ -2,7 +2,7 @@
 function te(this) {
 if(this.id == "score") {
   const cb = navigator.clipboard;
-  const paragraph = this.id;
+  const paragraph = document.getElementById("score").innerHTML;
   cb.writeText(paragraph).then(() => alert('Text copied'));
 }
 }
