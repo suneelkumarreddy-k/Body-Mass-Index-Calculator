@@ -1,8 +1,9 @@
 // Author: Shri Suneel Kumar Reddy 
 function te(this) {
 if(this.id == "score") {
-navigator.clipboard.writeText("01234");
-alert("score");
+  const cb = navigator.clipboard;
+  const paragraph = this.id;
+  cb.writeText(paragraph).then(() => alert('Text copied'));
 }
 }
 
