@@ -11,4 +11,4 @@ float: right;
 }
 
 th { background-color: #bde9ba; }
-th:nth-child(2) { background-color: #bdd6ff; }
+.th { background-color: #bdd6ff; }
