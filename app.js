@@ -6,11 +6,11 @@ return;
 if(ob.id == "sre") {
     var p = document.getElementById("score").innerHTML;  
 navigator.clipboard.writeText(p.toString());
-alert('Text copied');
+alert('Copied');
 } else {
   var p = document.getElementById("result").innerHTML;
   navigator.clipboard.writeText(p.toString());
-alert('Text copied');
+alert('Copied');
 }
 }
 
@@ -54,5 +54,5 @@ else {
 var end = performance.now();
 var wpn = end-start;
 alert("Calculated in "+wpn.toFixed(2)+" ms 😎");
-window.speechSynthesis.speak(new SpeechSynthesisUtterance(document.getElementById("result").innerHTML));
+window.speechSynthesis.speak(new SpeechSynthesisUtterance("Result is" + document.getElementById("result").innerHTML));
 }
