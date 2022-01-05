@@ -1,6 +1,6 @@
 // Author: Shri Suneel Kumar Reddy 
-function te(this) {
-if(this.id == "sre") {
+function te(ob) {
+if(ob.id == "sre") {
   const cb = navigator.clipboard;
   const p = document.getElementById("score").innerHTML;
   cb.writeText(p).then(() => alert('Text copied'));
