@@ -14,7 +14,7 @@ th { background-color: #bde9ba; }
 .th { background-color: #bdd6ff; }
 .mh  { background-color: #ffc2a3; }
 
-input[type=text] {
+input {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
