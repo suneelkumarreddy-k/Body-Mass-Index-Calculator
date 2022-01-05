@@ -1,4 +1,10 @@
 // Author: Shri Suneel Kumar Reddy 
+function te(this) {
+if(this.id == "score") {
+navigator.clipboard.writeText("01234");
+alert("score");
+}
+}
 
 function hf() {
 if(document.getElementById("height").value == "") {
