@@ -1,5 +1,8 @@
 // Author: Shri Suneel Kumar Reddy 
 function te(ob) {
+if(!navigator.clipboard) {
+return;
+}
 if(ob.id == "sre") {
     var p = document.getElementById("score").innerHTML;  
 navigator.clipboard.writeText(p.toString());
