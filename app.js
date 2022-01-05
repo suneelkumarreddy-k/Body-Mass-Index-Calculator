@@ -54,5 +54,5 @@ else {
 var end = performance.now();
 var wpn = end-start;
 alert("Calculated in "+wpn.toFixed(2)+" ms 😎");
-window.speechSynthesis.speak(new SpeechSynthesisUtterance("Result is" + document.getElementById("result").innerHTML));
+window.speechSynthesis.speak(new SpeechSynthesisUtterance("Result " + document.getElementById("result").innerHTML));
 }
