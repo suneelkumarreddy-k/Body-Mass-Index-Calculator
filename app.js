@@ -1,4 +1,5 @@
 // Author: Shri Suneel Kumar Reddy 
+try {
 function te(ob) {
 if(!navigator.clipboard) {
 return;
@@ -55,4 +56,7 @@ var end = performance.now();
 var wpn = end-start;
 alert("Calculated in "+wpn.toFixed(2)+" ms 😎");
 window.speechSynthesis.speak(new SpeechSynthesisUtterance("Result " + document.getElementById("result").innerHTML));
+}
+} catch (e) {
+alert(e.message);
 }
